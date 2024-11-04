@@ -6,7 +6,5 @@ install: true
 cache:
   directories:
     - $HOME/.m2
-before_script:
-  - chmod +x mvnw
 script:
-  - ./mvnw test -B
+  - mvn test -B
