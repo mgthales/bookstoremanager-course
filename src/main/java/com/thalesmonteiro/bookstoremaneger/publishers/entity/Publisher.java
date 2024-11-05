@@ -1,6 +1,7 @@
 package com.thalesmonteiro.bookstoremaneger.publishers.entity;
 
 import com.thalesmonteiro.bookstoremaneger.books.entity.Book;
+import com.thalesmonteiro.bookstoremaneger.entity.Auditable;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -9,7 +10,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class Publisher {
+public class Publisher extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
