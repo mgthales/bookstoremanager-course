@@ -1,15 +1,5 @@
-dist: xenial
 language: java
-jdk: openjdk17
-
-install: true
-
-before_script:
-  - chmod +x ./mvnw
-
+jdk:
+  - openjdk11
 script:
-  - ./mvnw test -B
-
-cache:
-  directories:
-    - $HOME/.m2
+  - mvn clean install
