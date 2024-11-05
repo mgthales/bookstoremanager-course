@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dist: xenial
 language: java
 jdk: openjdk17
@@ -13,3 +14,10 @@ script:
 cache:
   directories:
     - $HOME/.m2
+=======
+language: java
+jdk:
+  - openjdk17
+script:
+  - mvn clean install
+>>>>>>> 8050762c7f79a7b9a33a5214a68fc992d8ef061a
