@@ -1,0 +1,32 @@
+{
+  "info": {
+    "_postman_id": "1da8977a-6ef1-48bc-adf1-b657dcb571b7",
+    "name": "Bookstore manager",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39439521"
+  },
+  "item": [
+    {
+      "name": "GET hello endpoint",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/v1/books",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
