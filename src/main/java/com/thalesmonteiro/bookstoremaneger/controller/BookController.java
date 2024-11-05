@@ -18,6 +18,7 @@ public class BookController {
     })
     @GetMapping
     public String hello() {
-        return "Hello Worldssss";
+
+        return "Hello Bookstore manager, I am running an exmample with PR!";
     }
 }
