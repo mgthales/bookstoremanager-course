@@ -1,6 +1,7 @@
 package com.thalesmonteiro.bookstoremaneger.username.entity;
 
 import com.thalesmonteiro.bookstoremaneger.books.entity.Book;
+import com.thalesmonteiro.bookstoremaneger.entity.Auditable;
 import com.thalesmonteiro.bookstoremaneger.username.enums.Gender;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class Username {
+public class Username extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
