@@ -1,10 +1,8 @@
 package com.thalesmonteiro.bookstoremaneger.username.enums;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
-@AllArgsConstructor
 public enum Gender {
 
     MALE("Male"),
@@ -12,4 +10,7 @@ public enum Gender {
 
     private String description;
 
+    Gender(String description) {
+        this.description = description;
+    }
 }
