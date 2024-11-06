@@ -28,7 +28,7 @@ public class BookstoreExceptionHandler extends ResponseEntityExceptionHandler {
             exception.getMessage(),
             Collections.singletonList(exception.getMessage()));
     }
-    @ExceptionHandler(EntityNotFoundException.class)
+    @ExceptionHandler(EntityExistsException.class)
     public ResponseEntity<Object> handleExistsException(EntityExistsException exception){
         return buildResponseEntity(
                 HttpStatus.BAD_REQUEST,
